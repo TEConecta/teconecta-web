@@ -27,7 +27,7 @@ const HeaderNav: React.FC = () => {
   };
   const communities = ["comunidad1", "comunidad2", "comunidad3"];
   return (
-    <header className="z-20 flex items-center justify-between p-4 bg-white shadow-md">
+    <header className=" z-20 flex items-center justify-between p-4 bg-white shadow-md">
       <div className="flex items-center justify-center space-x-2">
         <button className="text-gray-600 md:hidden focus:outline-none">
           <Bars3Icon className="h-7 w-7 text-gray-600 hover:text-gray-800" />

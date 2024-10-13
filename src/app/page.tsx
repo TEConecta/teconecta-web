@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <HeaderNav />
-      <div className="flex w-full p-2">
+      <div className="flex w-full  p-2">
         <SideBar />
         <div className=" grid md:flex-1 md:ml-48  md:py-4 md:px-2">
           <PostComponent
