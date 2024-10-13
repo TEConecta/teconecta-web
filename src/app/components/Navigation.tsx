@@ -5,6 +5,7 @@ import {
   BellIcon,
   CogIcon,
   UsersIcon,
+  
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { useState } from 'react';
@@ -21,7 +22,7 @@ const Navigation: React.FC = () => {
   };
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-md">
+    <nav className="block md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-md">
       <ul className="flex justify-around items-center py-3">
         <li>
           <button className="flex flex-col items-center focus:outline-none">

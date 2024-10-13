@@ -1,10 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import {
   EllipsisHorizontalIcon,
   HandThumbUpIcon,
   HandThumbDownIcon,
   ChatBubbleBottomCenterTextIcon,
+  TrashIcon,
 } from "@heroicons/react/24/solid";
 
 interface PostProps {
@@ -14,6 +16,7 @@ interface PostProps {
   question: string;
   content: string;
   likes: number;
+  imageUrl?: string;
 }
 
 const Post: React.FC<PostProps> = ({
@@ -23,9 +26,16 @@ const Post: React.FC<PostProps> = ({
   question,
   content,
   likes,
+  imageUrl,
 }) => {
+  const [isDelete, setIsDelete] = useState(false);
+
+  const showOptionDelete = () => {
+    setIsDelete(!isDelete);
+  };
+
   return (
-    <div className="p-4 border border-gray-200 rounded-lg shadow-md mb-4">
+    <div className="p-4 border border-gray-200 rounded-lg shadow-md mb-4 border-b-2 relative w-full">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="relative">
@@ -46,12 +56,41 @@ const Post: React.FC<PostProps> = ({
             <h2 className="text-gray-500 text-sm">{`/${alias}`}</h2>
           </div>
         </div>
-        <EllipsisHorizontalIcon className="h-6 w-6 text-gray-500 hover:text-gray-800 cursor-pointer" />
+        <div className="relative">
+          <EllipsisHorizontalIcon
+            className="h-6 w-6 text-gray-500 hover:text-gray-800 cursor-pointer"
+            onClick={showOptionDelete}
+          />
+
+          {isDelete && (
+            <div className="absolute flex items-center right-0 mt-2 w-24 bg-white border 
+            border-gray-200 rounded-lg shadow-lg z-10 hover:bg-red-100">
+              <button
+                onClick={() => alert("¿Quiere eliminar este post?")}
+                className="  w-full text-left px-4 py-2 text-sm text-red-600 "
+              >
+                Borrar
+              </button>
+              <TrashIcon className=" aspect-square w-8 text-red-600 " />
+            </div>
+          )}
+        </div>
       </div>
 
       <h2 className="font-bold mt-2">{question}</h2>
       <p className="text-gray-700 mt-1">{content}</p>
 
+      {imageUrl && (
+        <div className=" p-2 w-full  flex items-center justify-center">
+          <Image
+            src={imageUrl}
+            alt=""
+            width={400}
+            height={200}
+            className=" rounded-lg aspect-square w-56"
+          />
+        </div>
+      )}
       <div className="flex items-center justify-between mt-4">
         <div className="flex items-center space-x-4">
           <div className="flex items-center justify-center">
