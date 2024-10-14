@@ -3,15 +3,16 @@ import {
   Navigation,
   PostComponent,
   SideBar,
+  SideBarSuggestions,
 } from "@/app/components";
 
 export default function Home() {
   return (
     <>
       <HeaderNav />
-      <div className="flex w-full  p-2">
+      <div className="flex w-full mt-20   p-2">
         <SideBar />
-        <div className=" grid md:flex-1 md:ml-48  md:py-4 md:px-2">
+        <div className=" grid sm:flex-1 md:ml-48 md:mr-64   md:px-2">
           <PostComponent
             username="ItsDragon"
             alias="itsdragon09"
@@ -34,6 +35,7 @@ export default function Home() {
             />
           ))}
         </div>
+        <SideBarSuggestions />
       </div>
 
       <Navigation />

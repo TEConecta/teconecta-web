@@ -63,7 +63,7 @@ const Post: React.FC<PostProps> = ({
           />
 
           {isDelete && (
-            <div className="absolute flex items-center right-0 mt-2 w-24 bg-white border 
+            <div className="absolute flex items-center right-0 mt-1 w-24 bg-white border 
             border-gray-200 rounded-lg shadow-lg z-10 hover:bg-red-100">
               <button
                 onClick={() => alert("¿Quiere eliminar este post?")}
@@ -71,7 +71,7 @@ const Post: React.FC<PostProps> = ({
               >
                 Borrar
               </button>
-              <TrashIcon className=" aspect-square w-8 text-red-600 " />
+              <TrashIcon className="mr-2 aspect-square w-8 text-red-600 " />
             </div>
           )}
         </div>
