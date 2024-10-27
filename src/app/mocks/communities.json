@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "/Comunidad de Programadores",
+        "imageUrl": "/imgs/perfil.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "/Comunidad de Diseño",
+        "imageUrl": "/imgs/perfil.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "/Comunidad de Fotografía",
+        "imageUrl": "/imgs/perfil.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "/Comunidad de Música",
+        "imageUrl": "/imgs/perfil.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "/Comunidad de Videojuegos",
+        "imageUrl": "/imgs/perfil.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "/Comunidad de Viajes",
+        "imageUrl": "/imgs/perfil.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "/Sexo de Viajes",
+        "imageUrl": "/imgs/perfil.jpeg"
+    }
+]

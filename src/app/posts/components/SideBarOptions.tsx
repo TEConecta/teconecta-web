@@ -6,44 +6,14 @@ import {
   CogIcon,
   ChatBubbleBottomCenterTextIcon,
 } from "@heroicons/react/24/solid";
+import { communitiesData } from "../../mocks";
 import Image from "next/image";
-const SideBar: React.FC = () => {
-  const communities = [
-    {
-      id: 1,
-      name: "/Comunidad de Programadores",
-      imageUrl: "/imgs/perfil.jpeg",
-    },
-    {
-      id: 2,
-      name: "/Comunidad de Diseño",
-      imageUrl: "/imgs/perfil.jpeg",
-    },
-    {
-      id: 3,
-      name: "/Comunidad de Fotografía",
-      imageUrl: "/imgs/perfil.jpeg",
-    },
-    {
-      id: 4,
-      name: "/Comunidad de Música",
-      imageUrl: "/imgs/perfil.jpeg",
-    },
-    {
-      id: 5,
-      name: "/Comunidad de Videojuegos",
-      imageUrl: "/imgs/perfil.jpeg",
-    },
-    {
-      id: 6,
-      name: "/Comunidad de Viajes",
-      imageUrl: "/imgs/perfil.jpeg",
-    },
-  ];
+
+export const SideBar = () => {
+  const communities = communitiesData
   return (
     <aside
-      className="hidden md:block border border-gray-200 rounded-lg shadow-xl p-4 h-screen w-48  
-    fixed  left-0  bg-white"
+    className="hidden md:block border border-gray-200 rounded-lg shadow-xl p-4 h-screen right-0 w-64    bg-white"
     >
       <div className="flex flex-col items-center justify-start h-full bg ">
         <ul className="space-y-4 relative flex flex-col items-start justify-center h-auto w-full">
@@ -99,4 +69,3 @@ const SideBar: React.FC = () => {
   );
 };
 
-export default SideBar;

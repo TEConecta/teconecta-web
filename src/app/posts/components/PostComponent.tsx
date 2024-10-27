@@ -19,7 +19,7 @@ interface PostProps {
   imageUrl?: string;
 }
 
-const Post: React.FC<PostProps> = ({
+export const PostComponent = ({
   username,
   alias,
   timeAgo,
@@ -27,7 +27,7 @@ const Post: React.FC<PostProps> = ({
   content,
   likes,
   imageUrl,
-}) => {
+} : PostProps) => {
   const [isDelete, setIsDelete] = useState(false);
 
   const showOptionDelete = () => {
@@ -35,7 +35,7 @@ const Post: React.FC<PostProps> = ({
   };
 
   return (
-    <div className="p-4 border border-gray-200 rounded-lg shadow-md mb-4 border-b-2 relative w-full">
+    <div className="p-4 border  border-gray-200 rounded-lg shadow-md mb-4 border-b-2 relative">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="relative">
@@ -111,4 +111,3 @@ const Post: React.FC<PostProps> = ({
   );
 };
 
-export default Post;

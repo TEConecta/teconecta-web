@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const Filter: React.FC = () => {
+export const Filter = () => {
   const communities = ["comunidad1", "comunidad2", "comunidad3"];
   const [optionFilter, setOptionFilter] = useState<string[]>([]);
 
@@ -47,4 +47,3 @@ const Filter: React.FC = () => {
     </div>
   );
 };
-export default Filter;

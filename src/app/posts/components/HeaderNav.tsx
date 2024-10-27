@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Filter from "./Filter";
+import {Filter} from "./";
 import {
   ArrowDownCircleIcon,
   Bars3Icon,
@@ -9,7 +9,7 @@ import {
   FunnelIcon,
 } from "@heroicons/react/24/solid";
 
-const HeaderNav: React.FC = () => {
+export const HeaderNav = () => {
   const [isFilter, setIsFilter] = useState(false);
 
   const showFilter = () => {
@@ -17,7 +17,7 @@ const HeaderNav: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full z-20 flex items-center justify-between p-4 bg-white shadow-md">
+    <header className=" sticky w-full z-20 flex items-center justify-between p-4 bg-white shadow-md">
       <div className="flex items-center justify-center space-x-2">
         <button className="text-gray-600 md:hidden focus:outline-none">
           <Bars3Icon className="h-7 w-7 text-gray-600 hover:text-gray-800" />
@@ -60,4 +60,3 @@ const HeaderNav: React.FC = () => {
   );
 };
 
-export default HeaderNav;
