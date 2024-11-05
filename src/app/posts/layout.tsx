@@ -11,19 +11,17 @@ interface MainLayoutProps {
   children: React.ReactNode;
 }
 
-const MainLayout = ({ children }:MainLayoutProps) => {
+const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div>
       <HeaderNav />
       <section className="flex w-full h-screen ">
         <SideBar />
-        <main  className="flex-1 h-screen">
-          {children}
-        </main>
+        <main className="flex-1 h-screen">{children}</main>
         <SideBarSuggestions />
       </section>
       <Navigation />
     </div>
   );
 };
-export  default MainLayout;
+export default MainLayout;

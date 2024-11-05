@@ -8,12 +8,19 @@ interface ModalPublicationProps {
 }
 
 export const ModalPublication = ({ closeModal }: ModalPublicationProps) => {
-  const communities = ["Comunidad a publicar", "Comunidad 1", "Comunidad 2", "Comunidad 3"];
+  const communities = [
+    "Comunidad a publicar",
+    "Comunidad 1",
+    "Comunidad 2",
+    "Comunidad 3",
+  ];
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
-        <h2 className="text-xl font-bold text-center mb-4">Nueva publicación</h2>
+        <h2 className="text-xl font-bold text-center mb-4">
+          Nueva publicación
+        </h2>
 
         <button
           className="absolute top-2 right-2 text-gray-400 hover:text-black transition-transform duration-700"
@@ -36,9 +43,7 @@ export const ModalPublication = ({ closeModal }: ModalPublicationProps) => {
           <h2 className="ml-3 font-semibold">/Bazan99.1</h2>
 
           <div className="ml-auto">
-            <select
-              className="bg-[#730022] text-white shadow-md hover:bg-white hover:text-[#730022] border hover:border-[#730022] px-4 py-2 rounded-lg"
-            >
+            <select className="bg-[#730022] text-white shadow-md hover:bg-white hover:text-[#730022] border hover:border-[#730022] px-4 py-2 rounded-lg">
               {communities.map((community, index) => (
                 <option key={index} value={community}>
                   {community}

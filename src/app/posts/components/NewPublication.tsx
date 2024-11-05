@@ -1,7 +1,7 @@
 "use client";
-import {useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import {ModalPublication} from "./";
+import { ModalPublication } from "./";
 
 export const NewPublication = () => {
   const [modalPublication, setModalPublication] = useState(false);
@@ -40,4 +40,3 @@ export const NewPublication = () => {
     </div>
   );
 };
-

@@ -10,11 +10,9 @@ import { communitiesData } from "../../mocks";
 import Image from "next/image";
 
 export const SideBar = () => {
-  const communities = communitiesData
+  const communities = communitiesData;
   return (
-    <aside
-    className="hidden md:block border border-gray-200 rounded-lg shadow-xl p-4 h-screen right-0 w-64    bg-white"
-    >
+    <aside className="hidden md:block border border-gray-200 rounded-lg shadow-xl p-4 h-screen right-0 w-64    bg-white">
       <div className="flex flex-col items-center justify-start h-full bg ">
         <ul className="space-y-4 relative flex flex-col items-start justify-center h-auto w-full">
           <li className="w-full hover:bg-gray-200">
@@ -68,4 +66,3 @@ export const SideBar = () => {
     </aside>
   );
 };
-

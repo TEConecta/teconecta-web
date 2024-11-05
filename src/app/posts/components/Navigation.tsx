@@ -19,7 +19,6 @@ export const Navigation = () => {
     setLogoSrc("/imgs/logo_negro.png");
   };
 
-
   return (
     <div>
       <nav className="block md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-md">
@@ -70,4 +69,3 @@ export const Navigation = () => {
     </div>
   );
 };
-

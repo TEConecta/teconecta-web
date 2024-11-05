@@ -56,9 +56,7 @@ const communities: Community[] = [
 
 export const SideBarSuggestions = () => {
   return (
-    <aside
-    className="hidden md:block border border-gray-200 rounded-lg shadow-xl p-4 h-screen  right-0 w-64 bg-white"
-    >
+    <aside className="hidden md:block border border-gray-200 rounded-lg shadow-xl p-4 h-screen  right-0 w-64 bg-white">
       <h2 className="text-lg font-bold ">Comunidades para seguir</h2>
       <ul className="scrollable-container h-96">
         {communities.map((community) => (
@@ -88,7 +86,6 @@ export const SideBarSuggestions = () => {
             </p>
           </li>
         ))}
-        
       </ul>
     </aside>
   );

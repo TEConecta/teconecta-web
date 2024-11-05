@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import {Filter} from "./";
+import { Filter } from "./";
 import {
   ArrowDownCircleIcon,
   Bars3Icon,
@@ -59,4 +59,3 @@ export const HeaderNav = () => {
     </header>
   );
 };
-

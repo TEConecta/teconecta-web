@@ -27,7 +27,7 @@ export const PostComponent = ({
   content,
   likes,
   imageUrl,
-} : PostProps) => {
+}: PostProps) => {
   const [isDelete, setIsDelete] = useState(false);
 
   const showOptionDelete = () => {
@@ -63,8 +63,10 @@ export const PostComponent = ({
           />
 
           {isDelete && (
-            <div className="absolute flex items-center right-0 mt-1 w-24 bg-white border 
-            border-gray-200 rounded-lg shadow-lg z-10 hover:bg-red-100">
+            <div
+              className="absolute flex items-center right-0 mt-1 w-24 bg-white border 
+            border-gray-200 rounded-lg shadow-lg z-10 hover:bg-red-100"
+            >
               <button
                 onClick={() => alert("¿Quiere eliminar este post?")}
                 className="  w-full text-left px-4 py-2 text-sm text-red-600 "
@@ -110,4 +112,3 @@ export const PostComponent = ({
     </div>
   );
 };
-
