@@ -15,9 +15,9 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div>
       <HeaderNav />
-      <section className="flex w-full h-screen ">
+      <section className="flex w-full h-[92vh] ">
         <SideBar />
-        <main className="flex-1 h-screen">{children}</main>
+        <main className="flex-1">{children}</main>
         <SideBarSuggestions />
       </section>
       <Navigation />

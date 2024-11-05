@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 interface CommunityCardProps {
   name: string;
@@ -24,7 +25,7 @@ const CommunityCard: React.FC<CommunityCardProps> = ({
     <div className="my-6">
       <div className="border border-gray-500 rounded-lg p-4">
         <div className="px-2 flex items-center justify-between">
-          <div className="flex items-center">
+            <Image src={image} alt="icon" width={64} height={64} className="w-16 h-auto" />
             <img src={image} alt="icon" className="w-16 h-auto" />
             <section className="ml-2">
               <p className="font-bold">/{name}</p>

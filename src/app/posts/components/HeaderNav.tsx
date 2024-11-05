@@ -17,7 +17,7 @@ export const HeaderNav = () => {
   };
 
   return (
-    <header className=" sticky w-full z-20 flex items-center justify-between p-4 bg-white shadow-md">
+    <header className="sticky w-full z-20 flex items-center justify-between h-[8vh] px-4 bg-white border-b border-gray-500">
       <div className="flex items-center justify-center space-x-2">
         <button className="text-gray-600 md:hidden focus:outline-none">
           <Bars3Icon className="h-7 w-7 text-gray-600 hover:text-gray-800" />

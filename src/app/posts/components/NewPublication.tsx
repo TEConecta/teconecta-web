@@ -14,8 +14,8 @@ export const NewPublication = () => {
       {modalPublication && (
         <ModalPublication closeModal={actionModalPublication} />
       )}
-      <div className="hidden md:block border border-gray-200 rounded-lg shadow-md p-4   bg-white">
-        <div className="flex items-center justify-between">
+      <div className="hidden md:block border-b border-gray-200 py-4 px-4 sm:px-8 bg-white">
+        <div className="flex items-center justify-between gap-2">
           <Image
             width={1000}
             height={1000}

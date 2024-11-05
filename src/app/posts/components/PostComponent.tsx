@@ -35,7 +35,7 @@ export const PostComponent = ({
   };
 
   return (
-    <div className="p-4 border  border-gray-200 rounded-lg shadow-md mb-4 border-b-2 relative">
+    <div className="py-4 px-4 sm:px-8 border-b border-gray-200 relative">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="relative">
